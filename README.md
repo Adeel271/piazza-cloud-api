@@ -92,6 +92,16 @@ docker compose up --build
 
 The API is available at `http://localhost:3000` and MongoDB data is stored in a named Docker volume.
 
+## Docker
+
+Build Docker image
+
+docker build -t piazza-cloud-api .
+
+Run Docker container
+
+docker run -p 3000:3000 piazza-cloud-api
+
 ## Run the 20 coursework test cases
 
 Keep the API running. Open another terminal in the project folder:
