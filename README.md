@@ -42,6 +42,18 @@ Before running the project install:
 - Docker and Docker Compose
 - Kubernetes Deployment with five replicas and a LoadBalancer Service
 
+## Main API Endpoints
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | /register | Register user |
+| POST | /login | User login |
+| GET | /posts | Browse posts |
+| POST | /posts | Create post |
+| POST | /posts/:id/like | Like a post |
+| POST | /posts/:id/dislike | Dislike a post |
+| POST | /posts/:id/comments | Add comment |
+
 ## Requirements
 
 - Node.js 18 or newer
