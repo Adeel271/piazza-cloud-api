@@ -1,0 +1,20 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: unless-stopped
+    volumes:
+      - piazza_mongo_data:/data/db
+  api:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      MONGODB_URI: mongodb://mongo:27017/piazza
+      JWT_SECRET: local_docker_secret_change_before_deployment
+      JWT_EXPIRES_IN: 2h
+    depends_on:
+      - mongo
+volumes:
+  piazza_mongo_data:

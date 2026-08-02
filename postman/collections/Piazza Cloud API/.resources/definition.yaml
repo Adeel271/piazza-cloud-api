@@ -1,0 +1,8 @@
+$kind: collection
+description: Requests for demonstrating the Piazza REST API coursework.
+auth:
+  - id: 48fbea0b-1f5d-4851-9c63-a9655454cce5
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{token}}"

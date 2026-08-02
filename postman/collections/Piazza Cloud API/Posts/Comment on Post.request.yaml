@@ -1,0 +1,17 @@
+$kind: http-request
+name: Comment on Post
+url: http://localhost:3000/api/posts/6a6f68880bbcd8e1584f81e0/comments
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "text": "A useful contribution to the discussion."
+    }
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YTZiZWM5MzBjYmI1YzY5YjljMGM5MGEiLCJuYW1lIjoiTWFyeSIsImlhdCI6MTc4NTY4NjM3NCwiZXhwIjoxNzg1NjkzNTc0fQ.QWWCUr6biNZomWXi65J1xhJ2zwE7cHIVFR_ct1SQH_o
+order: 5000

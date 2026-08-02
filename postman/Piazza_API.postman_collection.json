@@ -1,0 +1,66 @@
+{
+  "info": {
+    "name": "Piazza Cloud API",
+    "description": "Requests for demonstrating the Piazza REST API coursework.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {"type": "bearer", "bearer": [{"key": "token", "value": "{{token}}", "type": "string"}]},
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "auth": {"type": "noauth"},
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\n  \"name\": \"Olga\",\n  \"email\": \"olga@example.com\",\n  \"password\": \"Coursework123!\"\n}"},
+            "url": "{{baseUrl}}/api/auth/register"
+          }
+        },
+        {
+          "name": "Login",
+          "event": [{"listen": "test", "script": {"exec": ["if (pm.response.code === 200) {", "  pm.environment.set('token', pm.response.json().token);", "}"]}}],
+          "request": {
+            "auth": {"type": "noauth"},
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\n  \"email\": \"olga@example.com\",\n  \"password\": \"Coursework123!\"\n}"},
+            "url": "{{baseUrl}}/api/auth/login"
+          }
+        },
+        {"name": "Profile", "request": {"method": "GET", "url": "{{baseUrl}}/api/auth/profile"}}
+      ]
+    },
+    {
+      "name": "Posts",
+      "item": [
+        {
+          "name": "Create Tech Post",
+          "event": [{"listen": "test", "script": {"exec": ["if (pm.response.code === 201) {", "  pm.environment.set('postId', pm.response.json().post._id);", "}"]}}],
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\n  \"title\": \"Cloud technology discussion\",\n  \"topics\": [\"Tech\"],\n  \"message\": \"An original Piazza message about cloud technology.\",\n  \"expiresAt\": \"2030-01-01T12:00:00.000Z\"\n}"},
+            "url": "{{baseUrl}}/api/posts"
+          }
+        },
+        {"name": "Browse Tech", "request": {"method": "GET", "url": "{{baseUrl}}/api/posts/topic/Tech"}},
+        {"name": "Like Post", "request": {"method": "POST", "url": "{{baseUrl}}/api/posts/{{postId}}/like"}},
+        {"name": "Dislike Post", "request": {"method": "POST", "url": "{{baseUrl}}/api/posts/{{postId}}/dislike"}},
+        {
+          "name": "Comment on Post",
+          "request": {
+            "method": "POST",
+            "header": [{"key": "Content-Type", "value": "application/json"}],
+            "body": {"mode": "raw", "raw": "{\n  \"text\": \"A useful contribution to the discussion.\"\n}"},
+            "url": "{{baseUrl}}/api/posts/{{postId}}/comments"
+          }
+        },
+        {"name": "Expired Tech History", "request": {"method": "GET", "url": "{{baseUrl}}/api/posts/topic/Tech/expired"}},
+        {"name": "Most Active Tech Post", "request": {"method": "GET", "url": "{{baseUrl}}/api/posts/topic/Tech/most-active"}}
+      ]
+    }
+  ]
+}

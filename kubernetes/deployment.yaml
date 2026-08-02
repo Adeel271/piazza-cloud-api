@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: piazza-api
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: piazza-api
+  template:
+    metadata:
+      labels:
+        app: piazza-api
+    spec:
+      containers:
+        - name: piazza-api
+          image: YOUR_DOCKERHUB_USERNAME/piazza-cloud-api:1.0
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"
+            - name: MONGODB_URI
+              valueFrom:
+                secretKeyRef:
+                  name: piazza-secrets
+                  key: mongodb-uri
+            - name: JWT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: piazza-secrets
+                  key: jwt-secret
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10

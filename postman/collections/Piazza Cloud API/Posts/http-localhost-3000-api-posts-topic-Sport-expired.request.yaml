@@ -1,0 +1,10 @@
+$kind: http-request
+name: http://localhost:3000/api/posts/topic/Sport/expired
+description: ""
+url: http://localhost:3000/api/posts/topic/Sport/expired
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YTZiZWM2NjBjYmI1YzY5YjljMGM5MDciLCJuYW1lIjoiTmljayIsImlhdCI6MTc4NTY5MDc3NCwiZXhwIjoxNzg1Njk3OTc0fQ.4J-k7WPsgB-Fb5iHJJDtPLLQNuMKF2VuFHXkT4YKiMQ
+order: 303263562865024

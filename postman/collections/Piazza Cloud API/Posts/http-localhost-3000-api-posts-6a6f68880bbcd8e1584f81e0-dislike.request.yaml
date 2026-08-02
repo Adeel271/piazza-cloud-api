@@ -1,0 +1,13 @@
+$kind: http-request
+name: http://localhost:3000/api/posts/6a6f68880bbcd8e1584f81e0/dislike
+description: ""
+url: http://localhost:3000/api/posts/6a6f68880bbcd8e1584f81e0/dislike
+method: POST
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YTZiZWM5MzBjYmI1YzY5YjljMGM5MGEiLCJuYW1lIjoiTWFyeSIsImlhdCI6MTc4NTY4NjM3NCwiZXhwIjoxNzg1NjkzNTc0fQ.QWWCUr6biNZomWXi65J1xhJ2zwE7cHIVFR_ct1SQH_o
+order: 3472462183324420

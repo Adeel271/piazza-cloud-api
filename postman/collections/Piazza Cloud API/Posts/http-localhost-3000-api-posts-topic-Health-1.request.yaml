@@ -1,0 +1,10 @@
+$kind: http-request
+name: http://localhost:3000/api/posts/topic/Health
+description: ""
+url: http://localhost:3000/api/posts/topic/Health
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YTZiZWM5MzBjYmI1YzY5YjljMGM5MGEiLCJuYW1lIjoiTWFyeSIsImlhdCI6MTc4NTY4NjM3NCwiZXhwIjoxNzg1NjkzNTc0fQ.QWWCUr6biNZomWXi65J1xhJ2zwE7cHIVFR_ct1SQH_o
+order: 3931437360326015

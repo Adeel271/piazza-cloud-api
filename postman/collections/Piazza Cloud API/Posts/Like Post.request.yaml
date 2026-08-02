@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{baseUrl}}/api/posts/{{postId}}/like"
+method: POST
+order: 3000

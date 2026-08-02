@@ -1,0 +1,8 @@
+name: Piazza Local
+values:
+  - key: baseUrl
+    value: 'http://localhost:3000'
+  - key: token
+    value: ''
+  - key: postId
+    value: ''

@@ -1,0 +1,10 @@
+$kind: http-request
+name: http://localhost:3000/api/posts/topic/Tech/most-active
+description: ""
+url: http://localhost:3000/api/posts/topic/Tech/most-active
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YTZiZWM2NjBjYmI1YzY5YjljMGM5MDciLCJuYW1lIjoiTmljayIsImlhdCI6MTc4NTQ2MTQ3NSwiZXhwIjoxNzg1NDY4Njc1fQ._RpjFO3ScM6wUr9REP4X3TQ_BgyYhIyo8GWDQECmWaE
+order: 738784621627015
