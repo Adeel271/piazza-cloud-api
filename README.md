@@ -156,4 +156,4 @@ evidence            locations for genuine screenshots
 
 ## Submission
 
-Read `SUBMISSION_CHECKLIST.md`. The supplied technical report is a strong draft, but cloud IPs and screenshots must come from your own deployment. Do not claim evidence you did not create.
+Report & Code submitted with evidence
