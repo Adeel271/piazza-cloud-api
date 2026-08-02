@@ -17,6 +17,16 @@ The application allows users to:
 - Run the application on Google Cloud.
 - Deploy using Kubernetes.
 
+## Prerequisites
+
+Before running the project install:
+
+- Node.js
+- Docker Desktop
+- Git
+- MongoDB Atlas account
+- Google Cloud SDK
+
 ## Coursework coverage
 
 - JWT-protected API resources
