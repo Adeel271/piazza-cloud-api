@@ -4,7 +4,18 @@ A RESTful cloud Software as a Service for a topic-based discussion system. The i
 
 ## Project Overview
 
-This project implements a cloud-based discussion platform using Node.js, Express.js and MongoDB Atlas. The application supports authentication, topic-based posts, comments, likes/dislikes, Docker deployment and Kubernetes orchestration.
+Piazza Cloud SaaS is a cloud-based discussion platform developed using Node.js, Express.js and MongoDB Atlas.
+
+The application allows users to:
+
+- Register and log in securely.
+- Create discussion posts.
+- Like and dislike posts.
+- Add comments.
+- Browse posts by topic.
+- Deploy the application using Docker.
+- Run the application on Google Cloud.
+- Deploy using Kubernetes.
 
 ## Coursework coverage
 
