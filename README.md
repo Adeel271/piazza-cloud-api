@@ -177,6 +177,16 @@ kubectl get pods
 kubectl get services
 ```
 
+## Kubernetes Deployment
+
+The application is deployed using:
+
+- Deployment
+- Service
+- LoadBalancer
+
+The deployment runs five replicas for high availability.
+
 The Deployment requests five replicas and the Service type is `LoadBalancer`.
 
 ## Structure
