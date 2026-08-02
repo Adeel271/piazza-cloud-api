@@ -2,6 +2,10 @@
 
 A RESTful cloud Software as a Service for a topic-based discussion system. The implementation uses Node.js, Express, MongoDB, Mongoose and bearer JSON Web Tokens (JWTs). Users can register, authenticate, publish posts, browse by topic, like, dislike and comment. Expired posts stay visible but reject further interactions.
 
+## Project Overview
+
+This project implements a cloud-based discussion platform using Node.js, Express.js and MongoDB Atlas. The application supports authentication, topic-based posts, comments, likes/dislikes, Docker deployment and Kubernetes orchestration.
+
 ## Coursework coverage
 
 - JWT-protected API resources
