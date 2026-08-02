@@ -27,14 +27,3 @@ npm run test:coursework
 docker compose down
 ```
 
-## Before final university submission
-
-You must personally add:
-
-- your name and student ID in the technical report;
-- your GitHub repository URL;
-- your Docker Hub username in `kubernetes/deployment.yaml`;
-- your own MongoDB Atlas and JWT secrets for cloud deployment;
-- genuine screenshots from your Postman, Google Cloud VM, Docker, GKE, five pods and LoadBalancer runs.
-
-Do not submit `.env`, passwords, tokens or cloud credentials.

@@ -29,4 +29,4 @@
 9. Remove `.env` and every real secret before submission.
 10. Read and understand the code so you can explain it during a demonstration or viva.
 
-A cloud deployment cannot be truthfully pre-completed inside this ZIP because it must use your account, repository, image and screenshots.
+
