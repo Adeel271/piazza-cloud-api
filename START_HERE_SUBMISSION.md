@@ -1,6 +1,6 @@
 # START HERE — Piazza Submission Project
 
-This package contains the completed Piazza source code, JWT authentication, MongoDB models, required REST endpoints, a twenty-case automated test runner, Postman files, Docker files, Kubernetes manifests with five replicas and a LoadBalancer, report files, and evidence folders.
+This package contains source code, JWT authentication, MongoDB models, required REST endpoints, a twenty-case automated test runner, Postman files, Docker files, Kubernetes manifests with five replicas and a LoadBalancer, report files, and evidence folders. These are the instructions made east of what to do in this coursework as completed and provided a full source code is already done from user's end.
 
 ## Fastest local run
 
