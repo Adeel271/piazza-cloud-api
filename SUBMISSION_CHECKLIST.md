@@ -1,5 +1,7 @@
 # Piazza submission checklist
 
+Here are a guide to the requirements of the coursework as the user hsa already completed the source code. 
+
 ## Included in this package
 
 - Complete Node.js/Express REST API
